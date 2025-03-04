@@ -2,12 +2,12 @@ self.addEventListener("install", (event)=>{
     event.waitUntil(
         caches.open('pwa-cache').then((cache)=>{
             return caches.addAll([
-                '/',
-                '/index.html',
-                '/CSS/bookCreatorStyle.css',
-                '/CSS/style.css',
-                '/HTML/bookCreator.html',
-                '/JS/create.js'
+                './',
+                './index.html',
+                './CSS/bookCreatorStyle.css',
+                './CSS/style.css',
+                './HTML/bookCreator.html',
+                './JS/create.js'
             ]);
         })
     );
